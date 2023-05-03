@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {font-family: 'Righteous', cursive; }
+		h1 {
+        font-family: 'Righteous', cursive;
+        color: rgb(8, 63, 98); 
+        }
+		p {font-family: 'Righteous', cursive;
+		font-size: 28px;
+		margin-top: 5%;
+		margin-bottom: 20px;
+        color: rgb(15, 102, 126);}
+		body {
+		display: flex;
+		background-color: rgb(17, 179, 179);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		}
+		input[type="submit"] {
+        background-color: rgb(255, 234, 0);
+		font-family: 'Righteous', cursive; ;
+		font-size: 14px;
+        border-radius: 10px;
+        color: rgb(138, 1, 165);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        }
+		input[type="file"] {
+        background-color: rgb(255, 0, 0);
+		font-family: 'Righteous', cursive;
+		font-size: 14px;
+        border-radius: 20px;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        }
+
+        input[type="file"]::-webkit-file-upload-button {
+        visibility: hidden;
+        }
+
+        input[type="file"]::before {
+  content: 'Choose File';
+  display: inline-block;
+  background-color: #841212;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+        }
+
+        input[type="file"]:hover::before {
+        background-color: #f8e702;
+        }
+
+        input[type="file"]:active::before {
+        background-color: #f8eb05;
+        }
+
+		</style>
+</head>
+<body>
+
+	<p style="text-align:center;">Upload Page</p>
+	<p>Upload your file here:</p>
+	<form action="#" method="POST" enctype="multipart/form-data">
+		<input type="file" name="fileToUpload">
+		<input type="submit" value="Upload">
+	</form>
+	<button onclick="goBack()" * style="margin-top: 20px; background-color: #ffa500; color: #fff; border-radius: 10px; padding: 10px 20px; border: none; cursor: pointer;">Back</button>
+
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
